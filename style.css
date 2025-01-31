@@ -1,30 +1,68 @@
-.seccion {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-.galeria {
+html {
+    background-color: #333;
+}
+
+.contenedor {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    padding: 100px;
 
-.primera {
-    grid-column: span 2;
-}
+.contBuscador {
+   justify-self: end;    
 
-.ultimas {
-    grid-column: span 5;
-
-.textos {
-    position: absolute;
-    transform: translateY(-100%);
-}
-}
-
+.buscador {
+    position: relative;
     img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+       }
+
+   input {
+    color: white;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 24px;
+    padding: 8px 32px;
+    width: fit-content;
+    background-color: transparent;
+
+    ::placeholder {
+    color: white;
 }
 }
 }
+
+.titulo {
+ align-self: self-end;
+ display: grid;
+ gap: 10px;
+ h2 {
+    color: gray;
+}
+ h1 {
+    color: white;   
+}
+a {
+    color: white;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 24px;
+    padding: 8px 32x;
+    width: fit-content;
+    img {
+        margin-right: 20px;
+        width: 20px;
+     }
+    }
+   }
+  }
