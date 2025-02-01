@@ -36,7 +36,7 @@ html {
     width: fit-content;
     background-color: transparent;
 
-    ::placeholder {
+    &::placeholder {
     color: white;
 }
 }
